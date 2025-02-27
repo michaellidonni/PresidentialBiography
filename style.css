@@ -1,10 +1,30 @@
-body, html {
-    height: 100%;
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+.navbar {
+  background-color: #1f1f1f;
+}
+
+.navbar-brand {
+  color: #e0e0e0;
+}
+.nav-link {
+  color: #e0e0e0;
+}
+
+.nav-link:hover {
+  color: #bb86fc !important;
+}
+.nav-link.active {
+  color: #bb86fc !important;
 }
 
 .hero-image {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://obamawhitehouse.archives.gov/sites/whitehouse.gov/files/images/first-family/29_warren_g_harding.jpg");
-  height: 65%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("imgs/Warren-G.-Harding.png");
+  height: 65vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -18,9 +38,42 @@ body, html {
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
-  font-size: 20px;
+  text-shadow: 0px 0px 10px #000000;
 }
 
 .Name {
-  font-size: 60px;
+  font-size: 3.5rem;
+  color: white;
+  font-weight: 700;
+}
+
+.PresdientNum {
+  font-size: 1.5rem;
+  color: #e0e0e0;
+}
+
+.card {
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+  background-color: #1f1f1f;
+  margin: 20px 0;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #e0e0e0;
+}
+
+.card-text {
+  font-size: 1rem;
+  color: #b0b0b0;
+}
+
+.card ul li {
+  margin-bottom: 10px;
+  font-size: 1rem;
+  list-style: none;
+  color: #b0b0b0;
 }
