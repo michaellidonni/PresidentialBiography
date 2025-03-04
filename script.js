@@ -1,5 +1,4 @@
 function checkAnswers() {
-  // Correct answers
   let correctAnswers = {
     q1: "1865",
     q2: "Republican",
@@ -10,7 +9,7 @@ function checkAnswers() {
   let score = 0;
   let form = document.getElementById("quizForm");
 
-  for (var i = 1; i <= 4; i++) {
+  for (let i = 1; i <= 4; i++) {
     let question = form.querySelector('input[name="q' + i + '"]:checked');
     if (question && question.value === correctAnswers["q" + i]) {
       score++;
