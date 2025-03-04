@@ -78,109 +78,6 @@ body {
   color: #b0b0b0;
 }
 
-.wrapper {
-  position: relative;
-  color: white;
-  text-align: center;
-  margin: 0 auto;
-  display: block;
-  width: 100%;
-  height: 240px;
-}
-
-.line {
-  display: block;
-  width: 70%;
-  height: 5px;
-  background: #262626;
-  position: absolute;
-  top: 49%;
-  left: 15%;
-}
-
-.wrapper .timeline {
-  height: 100%;
-}
-
-.item {
-  width: 6%;
-  display: inline-block;
-  position: relative;
-  height: 100%;
-  margin-right: 70px;
-  transition: width .5s;
-  z-index: 1;
-}
-
-.item > span {
-  height: 32px;
-  display: block;
-  font-weight: bold;
-  position: absolute;
-  top: 50%;
-  margin-top: -8px;
-  width: 100%;
-  cursor: pointer;
-}
-
-.item > span:before {
-  content: '';
-  display: block;
-  width: 16px;
-  height: 16px;
-  background: #000;
-  margin: 0 auto 8px;
-  border-radius: 50%;
-}
-
-.text {
-  display: none !important;
-  position: absolute;
-  left: 0;
-  top: 50%;
-  margin-top: -50%;
-  width: 100%;
-}
-
-.text div {
-  display: block;
-  width: 100%;
-  height: 100%;
-}
-
-.text div span {
-  position: absolute;
-  width: 250%;
-  margin-left: -72%;
-  bottom: -40px;
-  left: 0;
-  font-size: 20px;
-  text-transform: uppercase;
-  text-decoration: none;
-  white-space: nowrap;
-  color: #000;
-  font-weight: bold;
-  background-color: blue;
-}
-
-.text div span:after {
-  margin-left: 5px;
-}
-
-.item.active {
-  width: 10%;
-}
-
-.item.active .text {
-  display: block;
-}
-
-.custom-tooltip {
-  --bs-tooltip-bg: blue;
-  --bs-tooltip-color: white;
-}
-
-
 .text-box {
   background-color: #333333;
   padding: 30px;
@@ -221,9 +118,58 @@ p {
   color: #aaaaaa;
 }
 
-footer {
-  background-color: #2b2b2b;
-  color: #9e9e9e;
-  padding: 15px 0;
+
+h1 {
+  color: #bb86fc;
+  font-size: 32px;
+  margin-bottom: 20px;
   text-align: center;
 }
+
+p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+input {
+  margin-right: 10px;
+}
+
+form {
+  background-color: #1f1f1f;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+form p {
+  font-size: 18px;
+  margin: 10px 0;
+}
+.btn {
+  background-color: #bb86fc;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  margin-top: 15px;
+  width: 100%;
+}
+
+.btn:hover {
+  background-color: #9e77d7;
+}
+
+#result {
+  font-size: 18px;
+  font-weight: bold;
+  padding-top: 15px;
+  text-align: center;
+}
+

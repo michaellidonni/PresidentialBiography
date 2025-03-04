@@ -66,7 +66,55 @@
         </div>
       </nav>
     </header>
-    <main></main>
+    <main class="container mt-3">
+      <h1 class="text-center mb-3">Warren G. Harding Quiz</h1>
+
+      <form id="quizForm">
+        <div class="mb-4">
+          <p>1. When was Warren G. Harding born?</p>
+          <div>
+            <input type="radio" name="q1" value="1865" id="q1_1865" /> <label for="q1_1865">1865</label><br />
+            <input type="radio" name="q1" value="1870" id="q1_1870" /> <label for="q1_1870">1870</label><br />
+            <input type="radio" name="q1" value="1875" id="q1_1875" /> <label for="q1_1875">1875</label><br />
+            <input type="radio" name="q1" value="1880" id="q1_1880" /> <label for="q1_1880">1880</label><br />
+          </div>
+        </div>
+
+        <div class="mb-4">
+          <p>2. Which political party did Harding belong to?</p>
+          <div>
+            <input type="radio" name="q2" value="Democratic" id="q2_Democratic" /> <label for="q2_Democratic">Democratic</label><br />
+            <input type="radio" name="q2" value="Republican" id="q2_Republican" /> <label for="q2_Republican">Republican</label><br />
+            <input type="radio" name="q2" value="Independent" id="q2_Independent" /> <label for="q2_Independent">Independent</label><br />
+            <input type="radio" name="q2" value="Progressive" id="q2_Progressive" /> <label for="q2_Progressive">Progressive</label><br />
+          </div>
+        </div>
+
+        <div class="mb-4">
+          <p>3. What year did Warren G. Harding become President?</p>
+          <div>
+            <input type="radio" name="q3" value="1920" id="q3_1920" /> <label for="q3_1920">1920</label><br />
+            <input type="radio" name="q3" value="1921" id="q3_1921" /> <label for="q3_1921">1921</label><br />
+            <input type="radio" name="q3" value="1922" id="q3_1922" /> <label for="q3_1922">1922</label><br />
+            <input type="radio" name="q3" value="1923" id="q3_1923" /> <label for="q3_1923">1923</label><br />
+          </div>
+        </div>
+
+        <div class="mb-4">
+          <p>4. How did Harding die while in office?</p>
+          <div>
+            <input type="radio" name="q4" value="Heart Attack" id="q4_HeartAttack" /> <label for="q4_HeartAttack">Heart Attack</label><br />
+            <input type="radio" name="q4" value="Stroke" id="q4_Stroke" /> <label for="q4_Stroke">Stroke</label><br />
+            <input type="radio" name="q4" value="Cancer" id="q4_Cancer" /> <label for="q4_Cancer">Cancer</label><br />
+            <input type="radio" name="q4" value="Pneumonia" id="q4_Pneumonia" /> <label for="q4_Pneumonia">Pneumonia</label><br />
+          </div>
+        </div>
+
+        <button type="button" class="btn btn-primary" onclick="checkAnswers()">Submit</button>
+        <div id="result" class="mt-4 text-center"></div>
+      </form>
+
+
     <footer>
       <!-- place footer here -->
     </footer>
@@ -82,5 +130,6 @@
       integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
       crossorigin="anonymous"
     ></script>
+    <script src="script.js"></script>
   </body>
 </html>
