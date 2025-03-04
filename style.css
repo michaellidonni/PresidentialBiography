@@ -1,30 +1,32 @@
+
 body {
   font-family: 'Arial', sans-serif;
   background-color: #121212;
-  color: #e0e0e0;  
+  color: #e0e0e0;
+  margin: 0;
+  padding: 0;
 }
 
 .navbar {
   background-color: #1f1f1f;
+  padding: 10px 15px;
 }
 
-.navbar-brand {
-  color: #e0e0e0;
-}
-.nav-link {
+.navbar-brand, .nav-link {
   color: #e0e0e0;
 }
 
-.nav-link:hover {
+.nav-link:hover, .nav-link.active {
   color: #bb86fc !important;
 }
-.nav-link.active {
-  color: #bb86fc !important;
+
+.navbar-toggler-icon {
+  color: #e0e0e0;
 }
 
 .hero-image {
   background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("imgs/Warren-G.-Harding.png");
-  height: 65vh;
+  height: 60vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -42,22 +44,19 @@ body {
 }
 
 .Name {
-  font-size: 3.5rem;
-  color: white;
+  font-size: 3rem;
   font-weight: 700;
 }
 
 .PresdientNum {
   font-size: 1.5rem;
-  color: #e0e0e0;
 }
 
 .card {
+  background-color: #1f1f1f;
   border: none;
   border-radius: 15px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
-  background-color: #1f1f1f;
-  margin: 20px 0;
 }
 
 .card-title {
@@ -66,16 +65,32 @@ body {
   color: #e0e0e0;
 }
 
-.card-text {
-  font-size: 1rem;
-  color: #b0b0b0;
-}
-
 .card ul li {
   margin-bottom: 10px;
   font-size: 1rem;
   list-style: none;
   color: #b0b0b0;
+}
+
+.btn-outline-light {
+  border-color: #bb86fc;
+  color: #bb86fc;
+}
+
+.btn-outline-light:hover {
+  background-color: #bb86fc;
+  color: #fff;
+}
+
+footer {
+  background-color: #1f1f1f;
+  color: #e0e0e0;
+  text-align: center;
+  padding: 20px;
+}
+
+footer p {
+  margin: 0;
 }
 
 .text-box {
@@ -87,6 +102,26 @@ body {
   box-shadow: 0 6px 10px rgba(0, 0, 0, 0.6);
 }
 
+.image-box {
+  background-color: #2a2a2a;
+  border-radius: 10px;
+  padding: 30px;
+  text-align: center;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.6);
+}
+
+.img-fluid {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.image-caption {
+  font-size: 15px;
+  font-style: italic;
+  color: #aaaaaa;
+}
 
 h3 {
   color: #f5f5f5;
@@ -98,41 +133,6 @@ h3 {
 p {
   font-size: 16px;
   margin-bottom: 15px;
-}
-
-.image-box {
-  background-color: #2a2a2a;
-    border-radius: 10px;
-  padding: 30px;
-  text-align: center;
-  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.6);
-}
-
-.img-fluid {
-  width: 75%;
-}
-
-.image-caption {
-  font-size: 15px;
-  font-style: italic;
-  color: #aaaaaa;
-}
-
-
-h1 {
-  color: #bb86fc;
-  font-size: 32px;
-  margin-bottom: 20px;
-  text-align: center;
-}
-
-p {
-  font-size: 16px;
-  margin-bottom: 10px;
-}
-
-input {
-  margin-right: 10px;
 }
 
 form {
@@ -149,7 +149,8 @@ form p {
   font-size: 18px;
   margin: 10px 0;
 }
-.btn {
+
+.result {
   background-color: #bb86fc;
   color: white;
   border: none;
@@ -162,14 +163,10 @@ form p {
   width: 100%;
 }
 
-.btn:hover {
+.result:hover {
   background-color: #9e77d7;
 }
 
-#result {
-  font-size: 18px;
-  font-weight: bold;
-  padding-top: 15px;
-  text-align: center;
+iframe {
+  margin-left: 27%;
 }
-
